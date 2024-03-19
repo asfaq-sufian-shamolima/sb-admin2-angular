@@ -1,3 +1,42 @@
-<div [@routerTransition]>
-<p>user page</p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-9 col-md-6 col-sm-4">
+            <div class="row">
+                <h1>Add New User</h1>
+            </div>
+        
+            <div class="row">
+                <form [formGroup]="userInfo">
+                    <fieldset class="form-group">
+                        <label for="name">User Name</label>
+                        <input class="form-control" type="text" placeholder="Enter User Name" id="name" formControlName="name"/>
+                    </fieldset>
+        
+                    <fieldset class="form-group">
+                        <label for="email">User Email</label>
+                        <input class="form-control" type="email" placeholder="Enter User Email" id="email" formControlName="email"/>
+                    </fieldset>
+        
+                    <div class="checkbox">
+                        <label> <input type="checkbox" name="gp" [(ngModel)]="toggleGeneratePasswordCheckbox" /> Generate password </label>
+                    </div>
+                    
+                    <fieldset class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control" type="password" placeholder="Enter Password" id="Password" formControlName="password"/>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="re-Password">Re-type Password</label>
+                        <input class="form-control" type="password" placeholder="Enter Password Again" id="re-Password" [disabled]="toggleGeneratePasswordCheckbox" formControlName="rePassword"/>
+                    </fieldset>
+        
+                    <button class="btn btn-primary" (click)="addUser()" [disabled]="!userInfo.valid">Add Customer</button>
+                </form>
+                
+            </div>
+        
+        </div>
+    </div>
 </div>
+
