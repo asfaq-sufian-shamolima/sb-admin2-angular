@@ -5,7 +5,7 @@ import { NewTransportComponent } from './new-transport/new-transport.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'list',
     component: TransportListComponent
   },
   {

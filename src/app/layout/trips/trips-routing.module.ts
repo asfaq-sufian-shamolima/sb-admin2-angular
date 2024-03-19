@@ -5,7 +5,7 @@ import { NewTripComponent } from './new-trip/new-trip.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'list',
     component: TripListComponent
   },
   {
