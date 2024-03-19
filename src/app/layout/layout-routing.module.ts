@@ -27,6 +27,22 @@ const routes: Routes = [
             {
                 path: 'blank-page',
                 loadChildren: () => import('./blank-page/blank-page.module').then((m) => m.BlankPageModule)
+            },
+            {
+                path: 'customers',
+                loadChildren: () => import('./customers/customers.module').then((m) => m.CustomersModule)
+            },
+            {
+                path: 'users',
+                loadChildren: () => import('./users/users.module').then((m) => m.UsersModule)
+            },
+            {
+                path: 'transports',
+                loadChildren: () => import('./transports/transports.module').then((m) => m.TransportsModule)
+            },
+            {
+                path: 'trips',
+                loadChildren: () => import('./trips/trips.module').then((m) => m.TripsModule)
             }
         ]
     }

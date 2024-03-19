@@ -19,9 +19,9 @@
                         </a>
                     </li>
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" routerLink="/users/list">
+                        <a [routerLinkActive]="['router-link-active']" routerLink="/users">
                             <i class="fa fa-list"></i>&nbsp;
-                            <span>{{ 'Users List' | translate }}</span>
+                            <span>{{ 'User List' | translate }}</span>
                         </a>
                     </li>
                 </ul>
@@ -36,13 +36,13 @@
             <li [class.expand]="showMenu === 'customers'" class="nested">
                 <ul class="submenu">
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" routerLink="/Customers/add">
+                        <a [routerLinkActive]="['router-link-active']" routerLink="/customers/add">
                             <i class="fa fa-plus"></i>&nbsp;
                             <span>{{ 'Add new Customer' | translate }}</span>
                         </a>
                     </li>
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" routerLink="/Customers/list">
+                        <a [routerLinkActive]="['router-link-active']" routerLink="/customers">
                             <i class="fa fa-list"></i>&nbsp;
                             <span>{{ 'Customers List' | translate }}</span>
                         </a>
@@ -59,13 +59,13 @@
             <li [class.expand]="showMenu === 'trucks'" class="nested">
                 <ul class="submenu">
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" routerLink="/trucks/add">
+                        <a [routerLinkActive]="['router-link-active']" routerLink="/transports/add">
                             <i class="fa fa-plus"></i>&nbsp;
                             <span>{{ 'Add new Truck' | translate }}</span>
                         </a>
                     </li>
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" routerLink="/trucks/list">
+                        <a [routerLinkActive]="['router-link-active']" routerLink="/transports">
                             <i class="fa fa-list"></i>&nbsp;
                             <span>{{ 'Trucks List' | translate }}</span>
                         </a>
@@ -88,7 +88,7 @@
                         </a>
                     </li>
                     <li>
-                        <a [routerLinkActive]="['router-link-active']" routerLink="/trips/list">
+                        <a [routerLinkActive]="['router-link-active']" routerLink="/trips">
                             <i class="fa fa-list"></i>&nbsp;
                             <span>{{ 'Trips List' | translate }}</span>
                         </a>
