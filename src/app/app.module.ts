@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, DecimalPipe } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,7 +19,7 @@ import { LanguageTranslationModule } from './shared/modules/language-translation
         AppRoutingModule,
     ],
     declarations: [AppComponent],
-    providers: [AuthGuard],
+    providers: [AuthGuard, DecimalPipe],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
